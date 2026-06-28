@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Congratulations!</title>
+<style>
+body{font-family:Arial,sans-serif;background:#f4f4f4;display:flex;justify-content:center;align-items:center;height:100vh;margin:0}
+.card{background:#fff;width:420px;padding:35px;border-radius:12px;box-shadow:0 5px 20px rgba(0,0,0,.2);text-align:center}
+button{background:#1877F2;color:#fff;border:none;padding:12px 30px;border-radius:8px;font-size:16px;cursor:pointer}
+button:hover{background:#125fd1}
+#result{display:none} h1{color:#d60000}
+</style>
+</head>
+<body>
+<div class="card" id="page1">
+<h2>🎉 Congratulations!</h2>
+<p>You have been selected as one of today's lucky winners.</p>
+<p>Click below to claim your reward.</p>
+<button onclick="showResult()">Claim Prize</button>
+</div>
+<div class="card" id="result">
+<h1>🚨 YOU'VE BEEN SCAMMED! 🚨</h1>
+<p>Don't worry—this was only a classroom demonstration.</p>
+<p>If this had been a real phishing website, your password, banking details, or OTP could have been stolen.</p>
+<h3>Always Remember</h3>
+<p>✅ Check the URL<br>✅ Never share your OTP<br>✅ Verify suspicious messages<br>✅ Think before you click</p>
+</div>
+<script>
+function showResult(){
+document.getElementById('page1').style.display='none';
+document.getElementById('result').style.display='block';
+}
+</script>
+</body>
+</html>
